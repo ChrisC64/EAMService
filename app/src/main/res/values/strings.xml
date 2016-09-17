@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">EAM Service</string>
+    <string name="string_car_name">CAR NAME</string>
+    <string name="string_car_maker">MAKER</string>
+    <string name="string_car_model">MODEL</string>
+    <string name="string_car_year">2016</string>
+    <string name="string_car_region">US</string>
+    <string name="string_car_miles">2999</string>
+    <string name="string_car_image_src">link undefined</string>
+    <string name="content_description_car_image">image of a car</string>
+    <string name="edit_user_button">Edit User</string>
+
+    <!-- HINT TEXT -->
+    <string name="string_year">Year</string>
+    <string name="string_maker">Maker</string>
+    <string name="string_first_name">First Name</string>
+    <string name="string_age">0</string>
+    <string name="string_last_name">Last Name</string>
+    <string name="string_model">Model</string>
+    <string name="string_miles">0.0</string>
+    <string name="string_email">Email</string>
+    <string name="string_phone">Phone</string>
+    <string name="string_address">Address</string>
+    <!-- BUTTON TEXT -->
+    <string name="string_save">Save</string>
+</resources>

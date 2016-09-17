@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="customer"
+            type="com.lunasol.eamservice.Customer" />
+
+        <variable
+            name="IVehicle"
+            type="com.lunasol.eamservice.IVehicle" />
+    </data>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.lunasol.eamservice.MainActivity">
+
+        <TextView
+            android:id="@+id/customer_name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{customer.firstName + ' ' + customer.lastName, default=@string/string_first_name}" />
+
+        <TextView
+            android:id="@+id/car_maker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{customer.vehicle.make, default=@string/string_maker}" />
+
+        <TextView
+            android:id="@+id/car_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{customer.vehicle.model, default=@string/string_model}" />
+
+        <TextView
+            android:id="@+id/car_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{customer.vehicle.year, default=@string/string_year}" />
+
+        <TextView
+            android:id="@+id/car_region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_car_region"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/car_miles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{customer.vehicle.miles, default=@string/string_miles}" />
+
+        <TextView
+            android:id="@+id/customer_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{customer.email, default=@string/string_email}" />
+
+        <TextView
+            android:id="@+id/customer_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{customer.phone, default=@string/string_phone}" />
+
+        <TextView
+            android:id="@+id/customer_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(customer.age), default=@string/string_age}" />
+
+        <ImageView
+            android:id="@+id/car_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description_car_image" />
+
+        <Button
+            android:id="@+id/edit_user_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_user_button"/>
+    </LinearLayout>
+</layout>
